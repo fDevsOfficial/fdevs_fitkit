@@ -1,7 +1,7 @@
 name: fdevs_fitkit
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+description: "FitKit: Effortless Flutter Responsiveness"
+version: "0.0.1+1"
+homepage: https://github.com/fDevsOfficial/fdevs_fitkit/blob/main/README.md
 
 environment:
   sdk: '>=3.2.6 <4.0.0'
