@@ -4,12 +4,12 @@ extension FitKitSpacingExtension on Widget {
   static final _fitInstance = FitKit.instance;
 
   // Padding a widget on all side with responsive value
-  Widget paddingAll(double all) {
+  Widget fPaddingAll(double all) {
     return Padding(padding: EdgeInsets.all(all), child: this);
   }
 
   // Padding a widget from Left Top Right & Bottom side with responsive value
-  Widget paddingLTRB(double left, double top, double right, double bottom) {
+  Widget fPaddingLTRB(double left, double top, double right, double bottom) {
     return Padding(
       padding: EdgeInsets.fromLTRB(left, top, right, bottom),
       child: this,
@@ -17,7 +17,7 @@ extension FitKitSpacingExtension on Widget {
   }
 
   // Padding a widget on any side with responsive value
-  Widget paddingOnly({
+  Widget fPaddingOnly({
     double left = 0,
     double top = 0,
     double right = 0,
@@ -35,7 +35,7 @@ extension FitKitSpacingExtension on Widget {
   }
 
   // Padding a widget horizontally & vertically with responsive value
-  Widget paddingSymmetric({
+  Widget fPaddingSymmetric({
     double horizontal = 0,
     double vertical = 0,
   }) {
@@ -49,12 +49,12 @@ extension FitKitSpacingExtension on Widget {
   }
 
   // Margin a widget on all side with responsive value
-  Widget marginAll(double all) {
+  Widget fMarginAll(double all) {
     return Container(margin: EdgeInsets.all(all), child: this);
   }
 
   // Margin a widget from Left Top Right & Bottom side with responsive value
-  Widget marginLTRB(double left, double top, double right, double bottom) {
+  Widget fMarginLTRB(double left, double top, double right, double bottom) {
     return Container(
       margin: EdgeInsets.fromLTRB(left, top, right, bottom),
       child: this,
@@ -62,7 +62,7 @@ extension FitKitSpacingExtension on Widget {
   }
 
   // Margin a widget on any side with responsive value
-  Widget marginOnly({
+  Widget fMarginOnly({
     double left = 0,
     double top = 0,
     double right = 0,
@@ -80,7 +80,7 @@ extension FitKitSpacingExtension on Widget {
   }
 
   // Margin a widget horizontally & vertically with responsive value
-  Widget marginSymmetric({
+  Widget fMarginSymmetric({
     double horizontal = 0,
     double vertical = 0,
   }) {

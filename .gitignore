@@ -30,3 +30,4 @@ build/
 
 # Flutter Version Manager [FVM]
 .fvm
+example_projects/
