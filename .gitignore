@@ -29,5 +29,7 @@ migrate_working_dir/
 build/
 
 # Flutter Version Manager [FVM]
-.fvm
 example_projects/
+
+# FVM Version Cache
+.fvm/
