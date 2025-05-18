@@ -31,7 +31,7 @@ Future<T> showAsyncLoadingOverlay<T>(
         Positioned.fill(
           child: ModalBarrier(
             dismissible: false,
-            color: overlayColor ?? Colors.black.withOpacity(0.5),
+            color: overlayColor ?? Colors.black.withValues(alpha: 0.5),
           ),
         ),
         Positioned.fill(child: loadingWidget!),

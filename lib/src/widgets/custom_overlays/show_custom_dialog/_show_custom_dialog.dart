@@ -47,6 +47,7 @@ Future<T?> showCustomDialog<T>({
 
 class _CustomDialogWrapper extends StatelessWidget {
   const _CustomDialogWrapper({
+    // ignore: unused_element_parameter
     super.key,
     required this.child,
     required this.decoration,
