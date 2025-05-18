@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 extension FitKitSpacingExtension on Widget {
-  // Padding a widget on all side with responsive value
+  // Padding a widget on all side
   Widget fPaddingAll(double all) {
-    return Padding(padding: EdgeInsets.all(all), child: this);
+    return Padding(padding: EdgeInsetsDirectional.all(all), child: this);
   }
 
-  // Padding a widget from Left Top Right & Bottom side with responsive value
+  // Padding a widget from Left Top Right & Bottom side
   Widget fPaddingLTRB(double left, double top, double right, double bottom) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(left, top, right, bottom),
+      padding: EdgeInsetsDirectional.fromSTEB(left, top, right, bottom),
       child: this,
     );
   }
 
-  // Padding a widget on any side with responsive value
+  // Padding a widget on any side
   Widget fPaddingOnly({
     double left = 0,
     double top = 0,
@@ -22,23 +22,23 @@ extension FitKitSpacingExtension on Widget {
     double bottom = 0,
   }) {
     return Padding(
-      padding: EdgeInsets.only(
-        left: left,
+      padding: EdgeInsetsDirectional.only(
+        start: left,
         top: top,
-        right: right,
+        end: right,
         bottom: bottom,
       ),
       child: this,
     );
   }
 
-  // Padding a widget horizontally & vertically with responsive value
+  // Padding a widget horizontally & vertically
   Widget fPaddingSymmetric({
     double horizontal = 0,
     double vertical = 0,
   }) {
     return Padding(
-      padding: EdgeInsets.symmetric(
+      padding: EdgeInsetsDirectional.symmetric(
         horizontal: horizontal,
         vertical: vertical,
       ),
@@ -46,20 +46,20 @@ extension FitKitSpacingExtension on Widget {
     );
   }
 
-  // Margin a widget on all side with responsive value
+  // Margin a widget on all side
   Widget fMarginAll(double all) {
-    return Container(margin: EdgeInsets.all(all), child: this);
+    return Container(margin: EdgeInsetsDirectional.all(all), child: this);
   }
 
-  // Margin a widget from Left Top Right & Bottom side with responsive value
+  // Margin a widget from Left Top Right & Bottom side
   Widget fMarginLTRB(double left, double top, double right, double bottom) {
     return Container(
-      margin: EdgeInsets.fromLTRB(left, top, right, bottom),
+      margin: EdgeInsetsDirectional.fromSTEB(left, top, right, bottom),
       child: this,
     );
   }
 
-  // Margin a widget on any side with responsive value
+  // Margin a widget on any side
   Widget fMarginOnly({
     double left = 0,
     double top = 0,
@@ -67,23 +67,23 @@ extension FitKitSpacingExtension on Widget {
     double bottom = 0,
   }) {
     return Container(
-      margin: EdgeInsets.only(
-        left: left,
+      margin: EdgeInsetsDirectional.only(
+        start: left,
         top: top,
-        right: right,
+        end: right,
         bottom: bottom,
       ),
       child: this,
     );
   }
 
-  // Margin a widget horizontally & vertically with responsive value
+  // Margin a widget horizontally & vertically
   Widget fMarginSymmetric({
     double horizontal = 0,
     double vertical = 0,
   }) {
     return Container(
-      margin: EdgeInsets.symmetric(
+      margin: EdgeInsetsDirectional.symmetric(
         horizontal: horizontal,
         vertical: vertical,
       ),
