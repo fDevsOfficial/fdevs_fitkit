@@ -18,6 +18,7 @@ class CoolLoader extends StatefulWidget {
     Key? key,
     ImageProvider<Object> image = const AssetImage(
       'assets/shapes/loading_spinner.png',
+      package: 'fdevs_fitkit',
     ),
     Color? color,
   }) : this._(key: key, image: image, color: color);
